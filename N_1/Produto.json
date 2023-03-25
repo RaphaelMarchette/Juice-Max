@@ -1,0 +1,22 @@
+{
+    "Sucos":[
+        {       
+            "Id"		            :   "23"                ,
+		    "Nome"		            :   "Maracaju"          ,
+            "Estoque"	            :   "10"                ,
+        	"Valor"		            :   "7.48"        
+        },
+        {       
+            "Id"		            :   "330"               ,
+		    "Nome"		            :   "Açai / Banana"     ,
+            "Estoque"	            :   "15"                ,
+        	"Valor"		            :   "13.92"        
+        },
+        {       
+            "Id"		            :   "140"               ,
+		    "Nome"		            :   "Abacaxi / Hortelã" ,
+            "Estoque"	            :   "20"                ,
+        	"Valor"		            :   "5.99"        
+        }
+    ]
+}
