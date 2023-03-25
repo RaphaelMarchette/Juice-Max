@@ -1,0 +1,13 @@
+{
+    "tools":[
+        {       
+            "tool_name"		        :   "Nome"          ,
+		    "tool_type"		        :   "Tipo"          ,
+            "tool_diamiter"	        :   "Diâmetro"      ,
+        	"tool_height"		    :   "Altura"        ,
+        	"tool_angle"		    :   "Ângulo"        ,
+        	"tool_inserts_number"	:   "Qtd.Insertos"  ,
+        	"tool_preset_number"	:   "Corretor"          
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "Sucos":[
+        {       
+            "Id"		            :   "500"               ,
+		    "Nome"		            :   "Abacaxi / Hortelã" ,
+            "Estoque"	            :   "20"                ,
+        	"Valor"		            :   "5.99"          
+        }
+    ]
+}
