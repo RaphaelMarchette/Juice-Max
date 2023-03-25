@@ -106,7 +106,7 @@ class CRUD(Pre_Query):
         Banco.dml(query)
 
     def Read_Dados_SQL(table_name, pre_columns):
-        query = f"SELECT {pre_columns} from {table_name}"
+        query = f"SELECT {pre_columns} FROM {table_name}"
         query = Pre_Query.Tirar_Parentes_e_Aspas(query)
         Banco.dql(query)
         return query
