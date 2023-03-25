@@ -81,7 +81,7 @@ class System:
         return self.__new_value
     
     def code(self):
-        self.__code = 500
+        self.__code = 24
         return self.__code
 
 class Pre_Query:
@@ -104,6 +104,7 @@ class CRUD(Pre_Query):
     def Creat_Dados_SQL(table_name, pre_values):
         query = f"INSERT INTO {table_name} VALUES {pre_values}"
         Banco.dml(query)
+        return query
 
     def Read_Dados_SQL(table_name, pre_columns):
         query = f"SELECT {pre_columns} FROM {table_name}"
@@ -115,10 +116,12 @@ class CRUD(Pre_Query):
         query = f'UPDATE {table_name} SET {pre_columns[1]} = "{new_value}" WHERE {pre_columns[0]} = {code}'
         query = Pre_Query.Tirar_Parentes_e_Aspas(query)
         Banco.dml(query)
+        return query
 
     def Delete_Dados_SQL(table_name, pre_columns, code):
         query = f'DELETE FROM {table_name} WHERE {pre_columns[0]} = {code}'
         Banco.dml(query)
+        return query
 
 table_name  =   System().table_name
 pre_columns =   System().pre_columns
@@ -128,11 +131,11 @@ code        =   System().code
 
 
 #b = CRUD.Creat_Dados_SQL(table_name, pre_values)
-b = CRUD.Read_Dados_SQL(table_name, pre_columns)
-#b = CRUD.Update_Dados_SQL(table_name, pre_columns, new_value, code)
+#b = CRUD.Read_Dados_SQL(table_name, pre_columns)
+b = CRUD.Update_Dados_SQL(table_name, pre_columns, new_value, code)
 #b = CRUD.Delete_Dados_SQL(table_name, pre_columns, code)
 
-#print(b)
+print(b)
 
 
 
