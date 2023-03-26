@@ -9,7 +9,7 @@ class Banco:
             con = mysql.connector.connect(
                 host = "localhost",
                 user = "root",
-                passwd = "L33TSUPAH4X0R",
+                passwd = "",
                 database = "juicemax",
                 auth_plugin = "mysql_native_password"
             )
@@ -130,9 +130,9 @@ new_value   =   System().new_value
 code        =   System().code
 
 
-#b = CRUD.Creat_Dados_SQL(table_name, pre_values)
+b = CRUD.Creat_Dados_SQL(table_name, pre_values)
 #b = CRUD.Read_Dados_SQL(table_name, pre_columns)
-b = CRUD.Update_Dados_SQL(table_name, pre_columns, new_value, code)
+#b = CRUD.Update_Dados_SQL(table_name, pre_columns, new_value, code)
 #b = CRUD.Delete_Dados_SQL(table_name, pre_columns, code)
 
 print(b)
